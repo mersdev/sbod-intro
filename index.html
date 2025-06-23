@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTMY Test Vehicles</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mercedes-blue': '#00adef',
+                        'mercedes-dark': '#1a1a1a',
+                        'mercedes-gray': '#6b7280',
+                        'mercedes-light': '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-mercedes-light min-h-screen">
+
+    <!-- Header -->
+    <div class="bg-white shadow-sm">
+        <div class="px-6 py-4">
+            <h1 class="text-2xl font-bold text-mercedes-dark">MBTMY Test Vehicles</h1>
+            <p class="mt-1 text-slate-600 text-sm">Manage your Mercedes-Benz fleet</p>
+        </div>
+    </div>
+
+    <!-- Vehicle List -->
+    <div class="px-6 py-6 space-y-4">
+        <!-- Vehicle Card 1 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center justify-between space-x-4">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-mercedes-dark nickname">PEP Fleet Test Car</h3>
+                        <div class="flex items-center space-x-2">
+                            <h6 class="text-xs text-slate-600 font-medium">SBD0501</h6>
+                            <span class="text-slate-600 text-xs">•</span>
+                            <p class="model-name text-slate-600 text-xs">CLE 300 4MATIC Coupe</p>
+                        </div>
+                        <div class="flex items-center mt-2 space-x-2">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                            </svg>
+                            <span class="status text-xs text-green-600 font-medium">Available for sharing</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="public/CLE.png" alt="Mercedes-Benz GLE" class="w-20 h-16 object-cover object-center rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vehicle Card 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center justify-between space-x-4">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-mercedes-dark nickname">SBOD Fleet Test Car</h3>
+                        <div class="flex items-center space-x-2">
+                            <h6 class="text-xs text-slate-600 font-medium">SBD0502</h6>
+                            <span class="text-slate-600 text-xs">•</span>
+                            <p class="model-name text-slate-600 text-xs">GLE SUV</p>
+                        </div>
+                        <div class="flex items-center mt-2 space-x-2">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                            </svg>
+                            <span class="status text-xs text-green-600 font-medium">Available for sharing</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="public/GLE SUV.png" alt="Mercedes-Benz GLE" class="w-20 h-16 object-cover object-center rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vehicle Card 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center justify-between space-x-4">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-mercedes-dark nickname"> Fleet Test Car</h3>
+                        <div class="flex items-center space-x-2">
+                            <h6 class="text-xs text-slate-600 font-medium">SBD0503</h6>
+                            <span class="text-slate-600 text-xs">•</span>
+                            <p class="model-name text-slate-600 text-xs">S-Class Sedan</p>
+                        </div>
+                        <div class="flex items-center mt-2 space-x-2">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                            <span class="status text-xs text-orange-600 font-medium">Under Maintenance</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="public/S-Class.png" alt="Mercedes-Benz S-Class" class="w-20 h-16 object-cover object-center rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6">
+        <button class="bg-mercedes-blue hover:bg-blue-600 text-white p-4 rounded-full shadow-lg transition-all duration-200 hover:scale-105">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mercedes-Benz Logo -->
+    <div class="fixed bottom-6 left-6">
+        <div class="w-8 h-8 bg-mercedes-dark rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        // Add click handlers for vehicle cards
+        document.querySelectorAll('.bg-white.rounded-xl').forEach(card => {
+            card.addEventListener('click', function() {
+                // Add subtle animation on click
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 100);
+                
+                // Get vehicle details from the card
+                const nickname = this.querySelector('.nickname').textContent;
+                const modelName = this.querySelector('.model-name').textContent;
+                const plateNumber = this.querySelector('h6').textContent;
+                const status = this.querySelector('.status')?.textContent;
+                
+                // Navigate to shared.html with vehicle details as URL parameters
+                const params = new URLSearchParams({
+                    nickname: nickname,
+                    model: modelName,
+                    plate: plateNumber,
+                    status: status
+                });
+                
+                window.location.href = `shared.html?${params.toString()}`;
+            });
+        });
+
+        // FAB click handler
+        document.querySelector('.fixed.bottom-6.right-6 button').addEventListener('click', function() {
+            alert('Add new vehicle functionality would be implemented here');
+        });
+    </script>
+</body>
+</html>
