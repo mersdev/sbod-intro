@@ -56,23 +56,6 @@ This is a static project and does not require a build step or a local server.
 
 ---
 
-## 🗂️ File Structure
-
-```
-.
-├── index.html         # Main fleet management view
-├── shared.html        # Vehicle-specific sharing management view
-├── friend.html        # Guest/friend access view with remote controls
-├── public/
-│   ├── CLE.png
-│   ├── GLE SUV.png
-│   ├── S-Class.png
-│   └── female.png
-└── README.md          # This file
-```
-
----
-
 ## 🌊 User Flow
 
 The intended user journey through the application is as follows:
